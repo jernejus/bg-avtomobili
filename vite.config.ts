@@ -4,15 +4,8 @@ export default defineConfig({
   tanstackStart: {
     prerender: {
       enabled: true,
-      crawlLinks: false,
+      crawlLinks: true,
     },
-    pages: [
-      { path: "/" },
-      { path: "/storitve" },
-      { path: "/o-nas" },
-      { path: "/obvestila" },
-      { path: "/poti-do-nas" },
-      { path: "/ponudba" },
-    ],
+    pages: [{ path: "/" }],
   },
 });
