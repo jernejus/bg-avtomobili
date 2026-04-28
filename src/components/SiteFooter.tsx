@@ -9,7 +9,7 @@ export function SiteFooter() {
         <div>
           <div className="flex items-center gap-2">
             <div className="flex h-9 w-9 items-center justify-center rounded-md bg-accent text-accent-foreground font-bold font-display">
-              AN
+              B&amp;G
             </div>
             <div>
               <div className="font-display font-bold text-lg">{site.name}</div>
@@ -83,7 +83,7 @@ export function SiteFooter() {
       <div className="border-t border-primary-foreground/10">
         <div className="container-page flex flex-col gap-2 py-5 text-xs text-primary-foreground/60 sm:flex-row sm:items-center sm:justify-between">
           <div>© {new Date().getFullYear()} {site.legalName}. Vse pravice pridržane.</div>
-          <div>Družinsko podjetje • {site.address.city}, {site.address.country}</div>
+          <div>Partnerstvo in zaupanje • {site.address.city}, {site.address.country}</div>
         </div>
       </div>
     </footer>

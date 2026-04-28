@@ -33,12 +33,12 @@ export function SiteHeader() {
       <div className="container-page flex h-16 items-center justify-between gap-4 lg:h-20">
         <Link to="/" className="flex items-center gap-2 group" onClick={() => setOpen(false)}>
           <div className="flex h-9 w-9 items-center justify-center rounded-md bg-primary text-primary-foreground font-bold font-display">
-            AN
+            B&amp;G
           </div>
           <div className="leading-tight">
             <div className="font-display text-base font-bold text-foreground">{site.name}</div>
             <div className="text-[10px] uppercase tracking-widest text-muted-foreground">
-              od {site.founded} • Maribor
+              od {site.founded} • {site.address.city}
             </div>
           </div>
         </Link>

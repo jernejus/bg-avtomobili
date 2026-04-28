@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { Link } from "@tanstack/react-router";
 import { ChevronRight } from "lucide-react";
-import heroTeam from "@/assets/hero-team.jpg";
+import heroPartnership from "@/assets/hero-partnership.jpg";
 import heroWorkshop from "@/assets/hero-workshop.jpg";
 import heroCars from "@/assets/hero-cars.jpg";
 import heroTrade from "@/assets/hero-trade.jpg";
@@ -17,13 +17,13 @@ type Slide = {
 
 const slides: Slide[] = [
   {
-    eyebrow: "Družinsko podjetje • od 1999",
-    title: "Zaupanje, ki traja že 25 let.",
+    eyebrow: "Partnerstvo in zaupanje • od 2001",
+    title: "Stisk roke, ki velja 25 let.",
     subtitle:
-      "Tri generacije zadovoljnih kupcev v Mariboru in širši Štajerski. Vaši sosedje, vaš avto trgovec.",
+      "B&G Avtomobili — vaš partner za rabljena vozila v Šentjurju in širši Štajerski. Vaši sosedje, vaš avto trgovec.",
     cta: { label: "Spoznajte nas", to: "/o-nas" },
-    image: heroTeam,
-    alt: "Ekipa Avtohiše Novak pred salonom v Mariboru",
+    image: heroPartnership,
+    alt: "Stisk roke pred salonom B&G Avtomobili v Šentjurju",
   },
   {
     eyebrow: "Vse na enem mestu",
@@ -32,7 +32,7 @@ const slides: Slide[] = [
       "Prodaja, odkup, zavarovanje, mehanika, kleparstvo, ličarstvo. Z osebnim pristopom — od prvega ogleda do servisa.",
     cta: { label: "Naše storitve", to: "/storitve" },
     image: heroWorkshop,
-    alt: "Sodobna servisna delavnica Avtohiše Novak",
+    alt: "Sodobna servisna delavnica B&G Avtomobili",
   },
   {
     eyebrow: "Nova ponudba vsak teden",
@@ -41,7 +41,7 @@ const slides: Slide[] = [
       "Skrbno izbrana, preverjena vozila. Vsak avto prej pregledamo v naši delavnici.",
     cta: { label: "Poglejte ponudbo vozil", to: "/ponudba" },
     image: heroCars,
-    alt: "Ponudba rabljenih vozil v Avtohiši Novak",
+    alt: "Ponudba rabljenih vozil v B&G Avtomobili",
   },
   {
     eyebrow: "Star za nov",
@@ -50,7 +50,7 @@ const slides: Slide[] = [
       "Pošten odkup ali menjava. Hitra ocena, takojšnje plačilo, brez skrivnih stroškov.",
     cta: { label: "Pošljite povpraševanje", to: "/poti-do-nas" },
     image: heroTrade,
-    alt: "Predaja ključev v Avtohiši Novak",
+    alt: "Predaja ključev v B&G Avtomobili",
   },
 ];
 
