@@ -56,4 +56,12 @@ export const site = {
   },
 };
 
-export type Contact = typeof site.contacts.sales;
+export type Contact = {
+  name: string;
+  role: string;
+  phone: string;
+  phoneRaw: string;
+  email: string;
+  whatsapp?: string;
+  viber?: string;
+};
