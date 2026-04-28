@@ -10,7 +10,7 @@ export const Route = createFileRoute("/obvestila")({
     buildMeta({
       title: `Obvestila — ${site.name}`,
       description:
-        "Aktualna obvestila in novice iz Avtohiše Novak: nove ponudbe vozil, akcije zavarovanj, sezonske informacije in dogodki.",
+        "Aktualna obvestila in novice iz B&G Avtomobili: nove ponudbe vozil, akcije zavarovanj, sezonske informacije in dogodki.",
       path: "/obvestila",
       image: "/og-obvestila.jpg",
     }),

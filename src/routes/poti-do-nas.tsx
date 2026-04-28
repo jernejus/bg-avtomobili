@@ -11,8 +11,8 @@ import teamInsurance from "@/assets/team-insurance.jpg";
 export const Route = createFileRoute("/poti-do-nas")({
   head: () =>
     buildMeta({
-      title: `Poti do nas — ${site.name} | Maribor`,
-      description: `Kontaktni podatki, lokacija in delovni čas Avtohiše Novak v Mariboru. Pokličite, pišite preko WhatsApp ali Viber, ali oddajte povpraševanje.`,
+      title: `Poti do nas — ${site.name} | Šentjur`,
+      description: `Kontaktni podatki, lokacija in delovni čas B&G Avtomobili v Šentjurju. Pokličite, pišite preko WhatsApp ali Viber, ali oddajte povpraševanje.`,
       path: "/poti-do-nas",
       image: "/og-kontakt.jpg",
     }),
@@ -31,7 +31,7 @@ function Kontakt() {
             Poti do nas
           </h1>
           <p className="mt-4 max-w-2xl text-primary-foreground/80">
-            Najdete nas v Mariboru. Pokličite, pišite ali se enostavno oglasite.
+            Najdete nas v Šentjurju. Pokličite, pišite ali se enostavno oglasite.
           </p>
         </div>
       </section>
@@ -41,7 +41,7 @@ function Kontakt() {
         <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr]">
           <div className="overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-soft)]">
             <iframe
-              title="Lokacija Avtohiša Novak"
+              title="Lokacija B&G Avtomobili"
               src={`https://www.google.com/maps?q=${site.geo.lat},${site.geo.lng}&z=15&output=embed`}
               className="w-full h-[420px] border-0"
               loading="lazy"
@@ -176,7 +176,7 @@ function CallbackForm() {
             value={name}
             onChange={(e) => setName(e.target.value)}
             className="mt-1.5 w-full rounded-md border border-input bg-background px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-ring"
-            placeholder="Janez Novak"
+            placeholder="Janez Kovač"
           />
         </label>
         <label className="block">

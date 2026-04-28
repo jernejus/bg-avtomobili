@@ -32,7 +32,7 @@ export const Route = createRootRoute({
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "theme-color", content: "#0B2A4A" },
       { httpEquiv: "content-language", content: "sl" },
-      { title: `${site.name} — Rabljena vozila, zavarovanja in servis v Mariboru` },
+      { title: `${site.name} — Rabljena vozila, zavarovanja in servis v Šentjurju` },
       { name: "description", content: site.description },
       { name: "author", content: site.legalName },
       { property: "og:site_name", content: site.name },

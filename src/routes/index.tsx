@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ChevronRight, ShieldCheck, Users, MapPin, Sparkles, Car, Phone } from "lucide-react";
+import { ChevronRight, ShieldCheck, Handshake, MapPin, Sparkles, Car, Phone } from "lucide-react";
 import { SiteLayout } from "@/components/SiteLayout";
 import { HeroRotator } from "@/components/HeroRotator";
 import { ContactCard } from "@/components/ContactCard";
@@ -7,15 +7,16 @@ import { buildMeta } from "@/lib/seo";
 import { site } from "@/lib/site";
 import { notices } from "@/lib/notices";
 import heroCars from "@/assets/hero-cars.jpg";
+import sentjurTown from "@/assets/sentjur-town.jpg";
 import teamSales from "@/assets/team-sales.jpg";
 import teamInsurance from "@/assets/team-insurance.jpg";
 
 export const Route = createFileRoute("/")({
   head: () =>
     buildMeta({
-      title: `${site.name} — Rabljena vozila Maribor • 25 let tradicije`,
+      title: `${site.name} — Rabljena vozila Šentjur • 25 let tradicije`,
       description:
-        "Družinska avtohiša v Mariboru. Prodaja in odkup rabljenih vozil, zavarovanja Triglav, Sava, Adriatic, kleparstvo, ličarstvo, mehanika — vse na enem mestu.",
+        "B&G Avtomobili v Šentjurju. Prodaja in odkup rabljenih vozil, zavarovanja Triglav, Sava, Adriatic, kleparstvo, ličarstvo, mehanika — vse na enem mestu. Partnerstvo in zaupanje od 2001.",
       path: "/",
       image: "/og-home.jpg",
     }),
@@ -79,7 +80,7 @@ function Index() {
         <div className="container-page">
           <div className="text-center max-w-2xl mx-auto">
             <span className="text-xs font-semibold uppercase tracking-widest text-accent">
-              Zakaj Avtohiša Novak
+              Zakaj B&amp;G Avtomobili
             </span>
             <h2 className="mt-3 font-display text-3xl font-bold text-foreground sm:text-4xl text-balance">
               Štirje razlogi, zakaj nam stranke zaupajo
@@ -88,9 +89,9 @@ function Index() {
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {[
               {
-                icon: Users,
-                title: "Družinska tradicija",
-                text: "Tri generacije, ena vrednota — pošten odnos.",
+                icon: Handshake,
+                title: "Partnerstvo in zaupanje",
+                text: "Dva partnerja, ena vrednota — pošten odnos s stranko.",
               },
               {
                 icon: Sparkles,
@@ -100,7 +101,7 @@ function Index() {
               {
                 icon: MapPin,
                 title: "Lokalni partner",
-                text: "Maribor in Štajerska. Tu smo bili včeraj, smo danes, bomo jutri.",
+                text: "Šentjur in Štajerska. Tu smo bili včeraj, smo danes, bomo jutri.",
               },
               {
                 icon: ShieldCheck,
@@ -229,11 +230,52 @@ function Index() {
         </section>
       )}
 
+      {/* Lokalna pripadnost — Šentjur */}
+      <section className="relative overflow-hidden">
+        <img
+          src={sentjurTown}
+          alt="Šentjur in okolica — naš dom"
+          loading="lazy"
+          width={1536}
+          height={1024}
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/85 to-primary/40" />
+        <div className="relative z-10 container-page py-20 lg:py-28">
+          <div className="max-w-2xl">
+            <span className="inline-block rounded-full bg-accent/20 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-accent">
+              Naš dom
+            </span>
+            <h2 className="mt-4 font-display text-3xl font-bold text-primary-foreground sm:text-5xl text-balance">
+              Šentjur. Tu smo doma.
+            </h2>
+            <p className="mt-4 text-primary-foreground/85 text-lg leading-relaxed">
+              Štiri generacije naših strank, ena lokalna ekipa. Vemo, kakšne avte vozijo Štajerci
+              in kakšne ceste prevozijo. Zato vam znamo svetovati boljše.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a
+                href={`tel:${site.phoneRaw}`}
+                className="inline-flex items-center gap-2 rounded-md bg-accent px-6 py-3 font-semibold text-accent-foreground hover:shadow-[var(--shadow-glow)] transition-all"
+              >
+                <Phone className="h-4 w-4" /> {site.phone}
+              </a>
+              <Link
+                to="/poti-do-nas"
+                className="inline-flex items-center gap-2 rounded-md border border-primary-foreground/30 bg-primary-foreground/5 px-6 py-3 font-semibold text-primary-foreground hover:bg-primary-foreground/10 transition-colors"
+              >
+                <MapPin className="h-4 w-4" /> Kako do nas
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer CTA */}
       <section className="bg-surface py-16 lg:py-20">
         <div className="container-page text-center">
           <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl text-balance">
-            Pridite k nam v Maribor
+            Pridite k nam v {site.address.city}
           </h2>
           <p className="mt-3 text-muted-foreground">
             {site.address.street}, {site.address.postal} {site.address.city}

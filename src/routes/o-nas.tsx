@@ -14,9 +14,9 @@ import dealershipExterior from "@/assets/dealership-exterior.jpg";
 export const Route = createFileRoute("/o-nas")({
   head: () =>
     buildMeta({
-      title: `O nas — ${site.name} | Družinska tradicija od 1999`,
+      title: `O nas — ${site.name} | Partnerstvo in zaupanje od 2001`,
       description:
-        "Družinska avtohiša s 25 let tradicije v Mariboru. Spoznajte našo zgodbo, lastnika in ekipo: prodajo, zavarovanja, mehanike, kleparje in ličarje.",
+        "B&G Avtomobili — 25 let tradicije v Šentjurju. Spoznajte našo zgodbo, partnerja in ekipo: prodajo, zavarovanja, mehanike, kleparje in ličarje.",
       path: "/o-nas",
       image: "/og-o-nas.jpg",
     }),
@@ -27,7 +27,7 @@ const departments = [
   {
     title: "Vodstvo",
     members: [
-      { name: "Janez & Marko Novak", role: "Lastnika in ustanovitelja", image: teamOwners, wide: true },
+      { name: "Boštjan Brečko & Gregor Golob", role: "Partnerja in ustanovitelja", image: teamOwners, wide: true },
     ],
   },
   {
@@ -54,11 +54,11 @@ const departments = [
 ];
 
 const milestones = [
-  { year: "1999", text: "Janez in Marko Novak odpreta majhno avto trgovino v Mariboru." },
-  { year: "2005", text: "Razširitev na lastno servisno delavnico." },
-  { year: "2012", text: "Začetek sodelovanja z Zavarovalnico Triglav, Sava in Adriatic." },
-  { year: "2018", text: "Selitev v večji salon na Ptujsko cesto, dodano kleparstvo in ličarstvo." },
-  { year: "2024", text: "25 let tradicije in več kot 5.000 zadovoljnih strank." },
+  { year: "2001", text: "Boštjan in Gregor odpreta majhno avto trgovino v Šentjurju — rojstvo B&G Avtomobili." },
+  { year: "2007", text: "Razširitev na lastno servisno delavnico." },
+  { year: "2014", text: "Začetek sodelovanja z Zavarovalnico Triglav, Sava in Adriatic." },
+  { year: "2019", text: "Selitev v večji salon, dodano kleparstvo in ličarstvo." },
+  { year: "2026", text: "25 let tradicije in več kot 5.000 zadovoljnih strank." },
 ];
 
 function ONas() {
@@ -70,11 +70,11 @@ function ONas() {
             O nas
           </span>
           <h1 className="mt-3 font-display text-4xl font-bold sm:text-5xl text-balance max-w-3xl">
-            Družinska zgodba, ki traja že 25 let
+            Zgodba dveh partnerjev, ki traja že 25 let
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-primary-foreground/80">
             Od majhne trgovine z rabljenimi vozili do celovite avtohiše. Naša zgodba je zgodba zaupanja
-            naših strank.
+            naših strank v Šentjurju in širši Štajerski.
           </p>
         </div>
       </section>
@@ -87,17 +87,18 @@ function ONas() {
               Naša zgodba
             </span>
             <h2 className="mt-3 font-display text-3xl font-bold text-foreground sm:text-4xl text-balance">
-              Začelo se je leta 1999.
+              Začelo se je leta 2001.
             </h2>
             <div className="mt-5 space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Brata Janez in Marko Novak sta z željo po poštenem avto trgu odprla majhno
-                avtohišo v Mariboru. Začela sta z desetimi vozili in ogromno vere, da se v
-                tej panogi da delati drugače — z osebnim pristopom in dolgoročnimi odnosi.
+                Boštjan Brečko in Gregor Golob — dva prijatelja, dva partnerja — sta z željo
+                po poštenem avto trgu odprla majhno avtohišo v Šentjurju. Začela sta z
+                desetimi vozili in ogromno vere, da se v tej panogi da delati drugače: z
+                osebnim pristopom in dolgoročnimi odnosi.
               </p>
               <p>
-                Danes, 25 let kasneje, smo še vedno družinsko podjetje. Zavestno smo se
-                odločili, da rastemo počasi in skupaj s strankami. Veliko vas je z nami že
+                Danes, 25 let kasneje, smo še vedno dva partnerja in ena ekipa. Zavestno smo
+                se odločili, da rastemo počasi in skupaj s strankami. Veliko vas je z nami že
                 tretji ali četrti avto. Hvala za to zaupanje.
               </p>
               <p>
@@ -110,7 +111,7 @@ function ONas() {
           <div className="overflow-hidden rounded-2xl shadow-[var(--shadow-elevated)]">
             <img
               src={dealershipExterior}
-              alt="Avtohiša Novak v Mariboru"
+              alt="B&G Avtomobili v Šentjurju"
               loading="lazy"
               width={1536}
               height={1024}
