@@ -10,7 +10,7 @@ import { site } from "@/lib/site";
 export const Route = createFileRoute("/storitve")({
   head: () =>
     buildMeta({
-      title: `Storitve — ${site.name} | Maribor`,
+      title: `Storitve — ${site.name} | Šentjur`,
       description:
         "Prodaja in odkup rabljenih vozil, sklepanje zavarovanj (Triglav, Sava, Adriatic), kleparstvo, ličarstvo, vulkanizerstvo, mehanika in hladno ravnanje pločevine.",
       path: "/storitve",

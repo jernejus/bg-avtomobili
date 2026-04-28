@@ -7,9 +7,9 @@ import { site } from "@/lib/site";
 export const Route = createFileRoute("/ponudba")({
   head: () =>
     buildMeta({
-      title: `Ponudba rabljenih vozil — ${site.name} | Maribor`,
+      title: `Ponudba rabljenih vozil — ${site.name} | Šentjur`,
       description:
-        "Aktualna ponudba rabljenih vozil v Avtohiši Novak. Skrbno izbrana, preverjena vozila. Pokličite za testno vožnjo.",
+        "Aktualna ponudba rabljenih vozil v B&G Avtomobili. Skrbno izbrana, preverjena vozila. Pokličite za testno vožnjo.",
       path: "/ponudba",
       image: "/og-ponudba.jpg",
     }),
