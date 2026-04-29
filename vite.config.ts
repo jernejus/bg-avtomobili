@@ -1,12 +1,18 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
-  cloudflare: false,
   tanstackStart: {
-    prerender: {
+    spa: {
       enabled: true,
+      maskPath: "/",
+      prerender: {
+        crawlLinks: false,
+      },
+    },
+    prerender: {
       crawlLinks: false,
       autoStaticPathsDiscovery: true,
+      failOnError: false,
     },
     pages: [
       { path: "/" },
