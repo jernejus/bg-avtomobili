@@ -1,0 +1,41 @@
+{
+  "seo": {
+    "naslov": "Poti do nas — B&G Avtomobili | Šentjur",
+    "opis": "Kontaktni podatki, lokacija in delovni čas B&G Avtomobili v Šentjurju. Pokličite, pišite preko WhatsApp ali Viber, ali oddajte povpraševanje."
+  },
+  "uvod": {
+    "nadnaslov": "Kontakt",
+    "naslov": "Poti do nas",
+    "besedilo": "Najdete nas v Šentjurju. Pokličite, pišite ali se enostavno oglasite."
+  },
+  "naslovKartica": {
+    "nadnaslov": "Naslov",
+    "gumb": "Navigacija"
+  },
+  "delovniCas": { "nadnaslov": "Delovni čas" },
+  "splosniKontakt": { "nadnaslov": "Splošni kontakt" },
+  "svetovalci": {
+    "nadnaslov": "Vaši svetovalci",
+    "naslov": "Pokličite osebo, ki vam najbolj pomaga",
+    "naslovProdaja": "Prodaja in svetovanje",
+    "naslovZavarovanja": "Zavarovanja",
+    "naslovServis": "Servis in delavnica"
+  },
+  "obrazec": {
+    "nadnaslov": "Pišite nam",
+    "naslov": "Pokličemo vas nazaj.",
+    "besedilo": "Pustite kontakt in kratko vprašanje. Oglasimo se vam še isti delovni dan.",
+    "polja": {
+      "ime": "Vaše ime",
+      "telefon": "Telefon",
+      "tema": "Tema",
+      "sporocilo": "Sporočilo",
+      "imePlaceholder": "Janez Kovač",
+      "telefonPlaceholder": "+386 41 ...",
+      "sporociloPlaceholder": "Kratek opis..."
+    },
+    "teme": ["Prodaja", "Odkup vozila", "Zavarovanje", "Servis", "Kleparstvo / ličarstvo", "Drugo"],
+    "gumbPosljji": "Pošlji povpraševanje",
+    "opomba": "Klik odpre vaš e-poštni program z vnaprej pripravljenim sporočilom."
+  }
+}

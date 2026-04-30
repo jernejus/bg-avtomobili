@@ -1,0 +1,64 @@
+{
+  "seo": {
+    "naslov": "B&G Avtomobili — Rabljena vozila Šentjur • 25 let tradicije",
+    "opis": "B&G Avtomobili v Šentjurju. Prodaja in odkup rabljenih vozil, zavarovanja Triglav, Sava, Adriatic, kleparstvo, ličarstvo, mehanika — vse na enem mestu. Partnerstvo in zaupanje od 2001."
+  },
+
+  "predstavitev": {
+    "nadnaslov": "Kdo smo",
+    "naslov": "Domača avtohiša, ki vas pozna po imenu.",
+    "besedilo": "Že 25 let pomagamo Štajercem do njihovega naslednjega avta. Verjamemo v poštene odnose, kakovostna vozila in v to, da se stranka po nakupu vrne — za zavarovanje, servis ali zgolj nasvet.",
+    "povezava": { "besedilo": "Naša zgodba", "povezava": "/o-nas" }
+  },
+
+  "stevilke": [
+    { "stevilo": "25+",    "opis": "let tradicije" },
+    { "stevilo": "5.000+", "opis": "zadovoljnih strank" },
+    { "stevilo": "9",      "opis": "storitev pod eno streho" }
+  ],
+
+  "razlogiZaupanja": {
+    "nadnaslov": "Zakaj B&G Avtomobili",
+    "naslov": "Štirje razlogi, zakaj nam stranke zaupajo",
+    "kartice": [
+      { "ikona": "Handshake",   "naslov": "Partnerstvo in zaupanje", "besedilo": "Dva partnerja, ena vrednota — pošten odnos s stranko." },
+      { "ikona": "Sparkles",    "naslov": "Vse na enem mestu",       "besedilo": "Nakup, zavarovanje, servis, kleparstvo — brez tekanja." },
+      { "ikona": "MapPin",      "naslov": "Lokalni partner",         "besedilo": "Šentjur in Štajerska. Tu smo bili včeraj, smo danes, bomo jutri." },
+      { "ikona": "ShieldCheck", "naslov": "Pošten odnos",            "besedilo": "Brez skrivnih stroškov. Vsak avto preverjen pred prodajo." }
+    ]
+  },
+
+  "kontaktnaSekcija": {
+    "nadnaslov": "Pokličite nas",
+    "naslov": "Govorite z osebo, ki vas razume",
+    "besedilo": "Brez klicnih centrov. Pokličete — odgovori vaš svetovalec.",
+    "naslovProdaja": "Prodaja in svetovanje",
+    "naslovZavarovanja": "Zavarovanja"
+  },
+
+  "ponudbaCta": {
+    "nadnaslov": "Naša ponudba",
+    "naslov": "Vaš naslednji avto je verjetno že pri nas.",
+    "besedilo": "Skrbno izbrana, preverjena vozila. Ponudbo posodabljamo tedensko.",
+    "gumb": "Poglejte ponudbo"
+  },
+
+  "zadnjeObvestilo": {
+    "nadnaslov": "Najnovejše",
+    "naslov": "Zadnje obvestilo",
+    "vsaPovezava": "Vsa obvestila",
+    "vecPovezava": "Več obvestil"
+  },
+
+  "lokalnaPripadnost": {
+    "nadnaslov": "Naš dom",
+    "naslov": "Šentjur. Tu smo doma.",
+    "besedilo": "Štiri generacije naših strank, ena lokalna ekipa. Vemo, kakšne avte vozijo Štajerci in kakšne ceste prevozijo. Zato vam znamo svetovati boljše.",
+    "gumbKontakt": "Kako do nas"
+  },
+
+  "spodnjiCta": {
+    "naslov": "Pridite k nam v Šentjur",
+    "gumbKontakt": "Kako do nas"
+  }
+}

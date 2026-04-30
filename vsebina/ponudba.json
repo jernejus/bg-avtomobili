@@ -1,0 +1,22 @@
+{
+  "seo": {
+    "naslov": "Ponudba rabljenih vozil — B&G Avtomobili | Šentjur",
+    "opis": "Aktualna ponudba rabljenih vozil v B&G Avtomobili. Skrbno izbrana, preverjena vozila. Pokličite za testno vožnjo."
+  },
+  "uvod": {
+    "nadnaslov": "Ponudba vozil",
+    "naslov": "Vsa naša rabljena vozila",
+    "besedilo": "Ponudbo posodabljamo tedensko. Za testno vožnjo nas pokličite.",
+    "gumbZunanjaPovezava": "Odpri v novem oknu"
+  },
+  "opozoriloIframe": {
+    "predBesedilo": "Če se ponudba ne naloži pravilno,",
+    "povezavaBesedilo": "jo odprite v novem oknu",
+    "poBesedilu": "."
+  },
+  "spodnjiCta": {
+    "naslov": "Niste našli pravega?",
+    "besedilo": "Redno dobivamo nova vozila. Povejte nam, kaj iščete — poiščemo za vas.",
+    "gumbPredBesedilo": "Pokličite prodajo:"
+  }
+}

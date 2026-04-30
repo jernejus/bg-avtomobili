@@ -1,0 +1,42 @@
+{
+  "seo": {
+    "naslov": "Storitve — B&G Avtomobili | Šentjur",
+    "opis": "Prodaja in odkup rabljenih vozil, sklepanje zavarovanj (Triglav, Sava, Adriatic), kleparstvo, ličarstvo, vulkanizerstvo, mehanika in hladno ravnanje pločevine."
+  },
+  "uvod": {
+    "nadnaslov": "Storitve",
+    "naslov": "Vse za vaš avto. Pod eno streho.",
+    "besedilo": "Devet storitev, en tim. Kar pa ne počnemo sami (npr. financiranje, registracija, pranje), vas pošljemo k zaupanja vrednim partnerjem."
+  },
+  "potStranke": {
+    "nadnaslov": "Pot stranke",
+    "naslov": "Od ogleda do skrbi po nakupu",
+    "koraki": [
+      { "stevilka": "1", "naslov": "Izberete vozilo",       "opis": "Iz naše ponudbe ali uvoz po vaši želji.",        "partner": false },
+      { "stevilka": "2", "naslov": "Financiranje*",          "opis": "Povežemo vas s partnersko banko.",                "partner": true  },
+      { "stevilka": "3", "naslov": "Zavarovanje",            "opis": "Triglav, Sava, Adriatic — sklenemo na mestu.",    "partner": false },
+      { "stevilka": "4", "naslov": "Servis & vzdrževanje",   "opis": "Mehanika, kleparstvo, ličarstvo, gume.",          "partner": false },
+      { "stevilka": "5", "naslov": "Skrb po nakupu",         "opis": "Cenitve škode, pomoč pri prijavah, nasvet.",      "partner": false }
+    ],
+    "opomba": "* Storitev izvajamo prek preverjenega partnerja."
+  },
+  "vseStoritve": {
+    "nadnaslov": "Naše storitve",
+    "naslov": "9 storitev, en tim",
+    "seznam": [
+      { "ikona": "ShoppingBag", "naslov": "Odkup rabljenih vozil",     "opis": "Pošten odkup, takojšnja izplačila." },
+      { "ikona": "Car",         "naslov": "Prodaja rabljenih vozil",   "opis": "Skrbno izbrana in preverjena vozila.", "gumb": { "besedilo": "Naša ponudba", "povezava": "/ponudba" } },
+      { "ikona": "Hammer",      "naslov": "Kleparska dela",            "opis": "Karosersko popravilo po nesrečah." },
+      { "ikona": "Paintbrush",  "naslov": "Ličarska dela",             "opis": "Lakiranje s sodobno opremo in pravim odtenkom." },
+      { "ikona": "CircleDot",   "naslov": "Vulkanizerske storitve",    "opis": "Menjava, hramba in prodaja gum." },
+      { "ikona": "Wrench",      "naslov": "Mehanska dela",             "opis": "Servisni pregledi, popravila, diagnostika." },
+      { "ikona": "ShieldCheck", "naslov": "Sklepanje zavarovanj",      "opis": "Avtomobilska in premoženjska — Triglav, Sava, Adriatic." },
+      { "ikona": "FileSearch",  "naslov": "Cenitve in prijava škode",  "opis": "Za Triglav, Sava in Adriatic Slovenica." },
+      { "ikona": "Snowflake",   "naslov": "Hladno ravnanje pločevine", "opis": "Posledice toče — brez lakiranja, brez izgube vrednosti." }
+    ]
+  },
+  "spodnjiCta": {
+    "naslov": "Niste prepričani, kaj potrebujete?",
+    "besedilo": "Pokličite — najdemo rešitev."
+  }
+}
