@@ -5,14 +5,17 @@ import { SiteLayout } from "@/components/SiteLayout";
 import { ContactCard } from "@/components/ContactCard";
 import { buildMeta } from "@/lib/seo";
 import { site } from "@/lib/site";
+import { vsebina } from "@/lib/vsebina";
 import teamSales from "@/assets/team-sales.jpg";
 import teamInsurance from "@/assets/team-insurance.jpg";
+
+const v = vsebina.potiDoNas;
 
 export const Route = createFileRoute("/poti-do-nas")({
   head: () =>
     buildMeta({
-      title: `Poti do nas — ${site.name} | Šentjur`,
-      description: `Kontaktni podatki, lokacija in delovni čas B&G Avtomobili v Šentjurju. Pokličite, pišite preko WhatsApp ali Viber, ali oddajte povpraševanje.`,
+      title: v.seo.naslov,
+      description: v.seo.opis,
       path: "/poti-do-nas",
       image: "/og-kontakt.jpg",
     }),
@@ -25,18 +28,15 @@ function Kontakt() {
       <section className="bg-primary text-primary-foreground">
         <div className="container-page py-16 lg:py-20">
           <span className="text-xs font-semibold uppercase tracking-widest text-accent">
-            Kontakt
+            {v.uvod.nadnaslov}
           </span>
           <h1 className="mt-3 font-display text-4xl font-bold sm:text-5xl text-balance max-w-3xl">
-            Poti do nas
+            {v.uvod.naslov}
           </h1>
-          <p className="mt-4 max-w-2xl text-primary-foreground/80">
-            Najdete nas v Šentjurju. Pokličite, pišite ali se enostavno oglasite.
-          </p>
+          <p className="mt-4 max-w-2xl text-primary-foreground/80">{v.uvod.besedilo}</p>
         </div>
       </section>
 
-      {/* Lokacija + delovni čas */}
       <section className="container-page py-12 lg:py-16">
         <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr]">
           <div className="overflow-hidden rounded-2xl border border-border shadow-[var(--shadow-soft)]">
@@ -51,11 +51,9 @@ function Kontakt() {
           <div className="space-y-6">
             <div className="rounded-2xl border border-border bg-card p-6">
               <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-accent">
-                <MapPin className="h-4 w-4" /> Naslov
+                <MapPin className="h-4 w-4" /> {v.naslovKartica.nadnaslov}
               </div>
-              <div className="mt-3 font-display text-lg font-bold text-foreground">
-                {site.legalName}
-              </div>
+              <div className="mt-3 font-display text-lg font-bold text-foreground">{site.legalName}</div>
               <div className="text-muted-foreground">
                 {site.address.street}<br />
                 {site.address.postal} {site.address.city}, {site.address.country}
@@ -66,13 +64,13 @@ function Kontakt() {
                 rel="noopener noreferrer"
                 className="mt-4 inline-flex items-center gap-1.5 rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground hover:bg-primary-deep transition-colors"
               >
-                Navigacija
+                {v.naslovKartica.gumb}
               </a>
             </div>
 
             <div className="rounded-2xl border border-border bg-card p-6">
               <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-accent">
-                <Clock className="h-4 w-4" /> Delovni čas
+                <Clock className="h-4 w-4" /> {v.delovniCas.nadnaslov}
               </div>
               <ul className="mt-3 space-y-1.5 text-sm">
                 {site.hours.map((h) => (
@@ -86,7 +84,7 @@ function Kontakt() {
 
             <div className="rounded-2xl border border-border bg-surface p-6">
               <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-accent">
-                Splošni kontakt
+                {v.splosniKontakt.nadnaslov}
               </div>
               <div className="mt-3 space-y-2 text-sm">
                 <a href={`tel:${site.phoneRaw}`} className="flex items-center gap-2 text-foreground hover:text-primary">
@@ -101,44 +99,40 @@ function Kontakt() {
         </div>
       </section>
 
-      {/* Kontaktne osebe */}
       <section className="container-page py-12">
         <div className="text-center max-w-2xl mx-auto">
           <span className="text-xs font-semibold uppercase tracking-widest text-accent">
-            Vaši svetovalci
+            {v.svetovalci.nadnaslov}
           </span>
           <h2 className="mt-3 font-display text-3xl font-bold text-foreground sm:text-4xl">
-            Pokličite osebo, ki vam najbolj pomaga
+            {v.svetovalci.naslov}
           </h2>
         </div>
         <div className="mt-10 grid gap-6 lg:grid-cols-2">
-          <ContactCard contact={site.contacts.sales} image={teamSales} title="Prodaja in svetovanje" />
-          <ContactCard contact={site.contacts.insurance} image={teamInsurance} title="Zavarovanja" />
+          <ContactCard contact={site.contacts.sales} image={teamSales} title={v.svetovalci.naslovProdaja} />
+          <ContactCard contact={site.contacts.insurance} image={teamInsurance} title={v.svetovalci.naslovZavarovanja} />
         </div>
         <div className="mt-6 grid gap-6 max-w-3xl mx-auto">
           <ContactCard
             contact={site.contacts.service}
-            title="Servis in delavnica"
+            title={v.svetovalci.naslovServis}
             showWhatsapp={false}
             showViber={false}
           />
         </div>
       </section>
 
-      {/* Obrazec */}
       <section className="bg-surface py-16 lg:py-20">
         <div className="container-page">
           <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr] max-w-5xl mx-auto">
             <div>
               <span className="text-xs font-semibold uppercase tracking-widest text-accent">
-                Pišite nam
+                {v.obrazec.nadnaslov}
               </span>
               <h2 className="mt-3 font-display text-3xl font-bold text-foreground sm:text-4xl text-balance">
-                Pokličemo vas nazaj.
+                {v.obrazec.naslov}
               </h2>
-              <p className="mt-3 text-muted-foreground">
-                Pustite kontakt in kratko vprašanje. Oglasimo se vam še isti delovni dan.
-              </p>
+              <p className="mt-3 text-muted-foreground">{v.obrazec.besedilo}</p>
             </div>
             <CallbackForm />
           </div>
@@ -149,7 +143,8 @@ function Kontakt() {
 }
 
 function CallbackForm() {
-  const [topic, setTopic] = useState("Prodaja");
+  const f = v.obrazec;
+  const [topic, setTopic] = useState(f.teme[0]);
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
@@ -169,62 +164,57 @@ function CallbackForm() {
     >
       <div className="grid gap-4 sm:grid-cols-2">
         <label className="block">
-          <span className="text-sm font-medium text-foreground">Vaše ime</span>
+          <span className="text-sm font-medium text-foreground">{f.polja.ime}</span>
           <input
             required
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
             className="mt-1.5 w-full rounded-md border border-input bg-background px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-ring"
-            placeholder="Janez Kovač"
+            placeholder={f.polja.imePlaceholder}
           />
         </label>
         <label className="block">
-          <span className="text-sm font-medium text-foreground">Telefon</span>
+          <span className="text-sm font-medium text-foreground">{f.polja.telefon}</span>
           <input
             required
             type="tel"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             className="mt-1.5 w-full rounded-md border border-input bg-background px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-ring"
-            placeholder="+386 41 ..."
+            placeholder={f.polja.telefonPlaceholder}
           />
         </label>
       </div>
       <label className="block">
-        <span className="text-sm font-medium text-foreground">Tema</span>
+        <span className="text-sm font-medium text-foreground">{f.polja.tema}</span>
         <select
           value={topic}
           onChange={(e) => setTopic(e.target.value)}
           className="mt-1.5 w-full rounded-md border border-input bg-background px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-ring"
         >
-          <option>Prodaja</option>
-          <option>Odkup vozila</option>
-          <option>Zavarovanje</option>
-          <option>Servis</option>
-          <option>Kleparstvo / ličarstvo</option>
-          <option>Drugo</option>
+          {f.teme.map((t) => (
+            <option key={t}>{t}</option>
+          ))}
         </select>
       </label>
       <label className="block">
-        <span className="text-sm font-medium text-foreground">Sporočilo</span>
+        <span className="text-sm font-medium text-foreground">{f.polja.sporocilo}</span>
         <textarea
           rows={4}
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           className="mt-1.5 w-full rounded-md border border-input bg-background px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-ring"
-          placeholder="Kratek opis..."
+          placeholder={f.polja.sporociloPlaceholder}
         />
       </label>
       <button
         type="submit"
         className="inline-flex items-center gap-2 rounded-md bg-accent px-6 py-3 text-sm font-semibold text-accent-foreground shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-glow)] transition-all"
       >
-        <Send className="h-4 w-4" /> Pošlji povpraševanje
+        <Send className="h-4 w-4" /> {f.gumbPosljji}
       </button>
-      <p className="text-xs text-muted-foreground">
-        Klik odpre vaš e-poštni program z vnaprej pripravljenim sporočilom.
-      </p>
+      <p className="text-xs text-muted-foreground">{f.opomba}</p>
     </form>
   );
 }
