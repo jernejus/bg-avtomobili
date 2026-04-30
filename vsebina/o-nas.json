@@ -1,0 +1,66 @@
+{
+  "seo": {
+    "naslov": "O nas — B&G Avtomobili | Partnerstvo in zaupanje od 2001",
+    "opis": "B&G Avtomobili — 25 let tradicije v Šentjurju. Spoznajte našo zgodbo, partnerja in ekipo: prodajo, zavarovanja, mehanike, kleparje in ličarje."
+  },
+  "uvod": {
+    "nadnaslov": "O nas",
+    "naslov": "Zgodba dveh partnerjev, ki traja že 25 let",
+    "besedilo": "Od majhne trgovine z rabljenimi vozili do celovite avtohiše. Naša zgodba je zgodba zaupanja naših strank v Šentjurju in širši Štajerski."
+  },
+  "zgodba": {
+    "nadnaslov": "Naša zgodba",
+    "naslov": "Začelo se je leta 2001.",
+    "odstavki": [
+      "Boštjan Brečko in Gregor Golob — dva prijatelja, dva partnerja — sta z željo po poštenem avto trgu odprla majhno avtohišo v Šentjurju. Začela sta z desetimi vozili in ogromno vere, da se v tej panogi da delati drugače: z osebnim pristopom in dolgoročnimi odnosi.",
+      "Danes, 25 let kasneje, smo še vedno dva partnerja in ena ekipa. Zavestno smo se odločili, da rastemo počasi in skupaj s strankami. Veliko vas je z nami že tretji ali četrti avto. Hvala za to zaupanje.",
+      "Nismo veliki, smo pa popolni. Vse storitve okrog vašega avtomobila ponujamo pod eno streho — od prodaje in odkupa, prek zavarovanj, do servisa in kleparstva. Tako, kot bi to storil dober prijatelj."
+    ],
+    "slika": "dealership-exterior",
+    "opisSlike": "B&G Avtomobili v Šentjurju"
+  },
+  "mejniki": {
+    "nadnaslov": "Mejniki",
+    "naslov": "25 let v številkah in dejanjih",
+    "seznam": [
+      { "leto": "2001", "besedilo": "Boštjan in Gregor odpreta majhno avto trgovino v Šentjurju — rojstvo B&G Avtomobili." },
+      { "leto": "2007", "besedilo": "Razširitev na lastno servisno delavnico." },
+      { "leto": "2014", "besedilo": "Začetek sodelovanja z Zavarovalnico Triglav, Sava in Adriatic." },
+      { "leto": "2019", "besedilo": "Selitev v večji salon, dodano kleparstvo in ličarstvo." },
+      { "leto": "2026", "besedilo": "25 let tradicije in več kot 5.000 zadovoljnih strank." }
+    ]
+  },
+  "ekipa": {
+    "nadnaslov": "Ekipa",
+    "naslov": "Spoznajte ljudi za nasmehom",
+    "oddelki": [
+      {
+        "naslov": "Vodstvo",
+        "clani": [
+          { "ime": "Boštjan Brečko & Gregor Golob", "vloga": "Partnerja in ustanovitelja", "slika": "team-owners", "siroko": true }
+        ]
+      },
+      {
+        "naslov": "Prodaja",
+        "clani": [
+          { "ime": "Marko Kranjc", "vloga": "Vodja prodaje", "slika": "team-sales" }
+        ]
+      },
+      {
+        "naslov": "Zavarovanja",
+        "clani": [
+          { "ime": "Ana Horvat", "vloga": "Zavarovalniški referent", "slika": "team-insurance" }
+        ]
+      },
+      {
+        "naslov": "Servis in delavnica",
+        "clani": [
+          { "ime": "Tomaž Kos",   "vloga": "Mehanik",     "slika": "team-mechanic" },
+          { "ime": "Jure Petek",  "vloga": "Klepar",      "slika": "team-bodywork" },
+          { "ime": "Aleš Vidic",  "vloga": "Ličar",       "slika": "team-paint" },
+          { "ime": "Boris Zorko", "vloga": "Vulkanizer",  "slika": "team-tires" }
+        ]
+      }
+    ]
+  }
+}

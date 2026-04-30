@@ -1,0 +1,37 @@
+{
+  "diapozitivi": [
+    {
+      "nadnaslov": "Partnerstvo in zaupanje • od 2001",
+      "naslov": "Stisk roke, ki velja 25 let.",
+      "podnaslov": "B&G Avtomobili — vaš partner za rabljena vozila v Šentjurju in širši Štajerski. Vaši sosedje, vaš avto trgovec.",
+      "gumb": { "besedilo": "Spoznajte nas", "povezava": "/o-nas" },
+      "slika": "hero-partnership",
+      "opisSlike": "Stisk roke pred salonom B&G Avtomobili v Šentjurju"
+    },
+    {
+      "nadnaslov": "Vse na enem mestu",
+      "naslov": "Vaš avto. Pod eno streho.",
+      "podnaslov": "Prodaja, odkup, zavarovanje, mehanika, kleparstvo, ličarstvo. Z osebnim pristopom — od prvega ogleda do servisa.",
+      "gumb": { "besedilo": "Naše storitve", "povezava": "/storitve" },
+      "slika": "hero-workshop",
+      "opisSlike": "Sodobna servisna delavnica B&G Avtomobili"
+    },
+    {
+      "nadnaslov": "Nova ponudba vsak teden",
+      "naslov": "Vaš novi rabljeni avto vas čaka.",
+      "podnaslov": "Skrbno izbrana, preverjena vozila. Vsak avto prej pregledamo v naši delavnici.",
+      "gumb": { "besedilo": "Poglejte ponudbo vozil", "povezava": "/ponudba" },
+      "slika": "hero-cars",
+      "opisSlike": "Ponudba rabljenih vozil v B&G Avtomobili"
+    },
+    {
+      "nadnaslov": "Star za nov",
+      "naslov": "Vaš stari avto del nove zgodbe.",
+      "podnaslov": "Pošten odkup ali menjava. Hitra ocena, takojšnje plačilo, brez skrivnih stroškov.",
+      "gumb": { "besedilo": "Pošljite povpraševanje", "povezava": "/poti-do-nas" },
+      "slika": "hero-trade",
+      "opisSlike": "Predaja ključev v B&G Avtomobili"
+    }
+  ],
+  "drugiGumb": { "besedilo": "Kontaktirajte nas", "povezava": "/poti-do-nas" }
+}

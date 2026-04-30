@@ -1,0 +1,37 @@
+{
+  "seo": {
+    "naslov": "Obvestila — B&G Avtomobili",
+    "opis": "Aktualna obvestila in novice iz B&G Avtomobili: nove ponudbe vozil, akcije zavarovanj, sezonske informacije in dogodki."
+  },
+  "uvod": {
+    "nadnaslov": "Obvestila",
+    "naslov": "Kaj je novega pri nas",
+    "besedilo": "Aktualne ponudbe, sezonske informacije in obvestila o naših storitvah."
+  },
+  "seznam": [
+    {
+      "id": "2026-04-novosti-ponudbe",
+      "datum": "2026-04-20",
+      "naslov": "Nova prispela vozila — april 2026",
+      "povzetek": "Ta teden smo prejeli 12 novih rabljenih vozil, vključno s SUV in družinskimi limuzinami. Vsa vozila so pregledana in pripravljena za testno vožnjo."
+    },
+    {
+      "id": "2026-03-akcija-zavarovanja",
+      "datum": "2026-03-15",
+      "naslov": "Akcija avtomobilskih zavarovanj",
+      "povzetek": "Pri sklenitvi avtomobilskega zavarovanja Triglav prejmete brezplačno asistenco po Sloveniji za eno leto. Ponudba velja do konca aprila 2026."
+    },
+    {
+      "id": "2026-02-tocna-skoda",
+      "datum": "2026-02-08",
+      "naslov": "Sezona toče — pravočasno najavite popravilo",
+      "povzetek": "Hladno ravnanje pločevine je naša specialnost. Brez lakiranja, brez izgube vrednosti vozila. Pokličite za hitro oceno škode."
+    },
+    {
+      "id": "2026-01-novo-leto",
+      "datum": "2026-01-10",
+      "naslov": "Srečno novo leto 2026",
+      "povzetek": "Hvala vsem strankam za zaupanje v letu 2025. Z največjim veseljem nadaljujemo z osebnim pristopom tudi v novem letu."
+    }
+  ]
+}
