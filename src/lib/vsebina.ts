@@ -3,6 +3,7 @@ import domov from "../../vsebina/domov.json";
 import naslovniZaslon from "../../vsebina/naslovni-zaslon.json";
 import storitve from "../../vsebina/storitve.json";
 import oNas from "../../vsebina/o-nas.json";
+import obvestila from "../../vsebina/obvestila.json";
 import potiDoNas from "../../vsebina/poti-do-nas.json";
 import ponudba from "../../vsebina/ponudba.json";
 
@@ -11,6 +12,7 @@ export const vsebina = {
   naslovniZaslon,
   storitve,
   oNas,
+  obvestila,
   potiDoNas,
   ponudba,
 };
