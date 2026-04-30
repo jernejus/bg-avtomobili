@@ -1,60 +1,57 @@
-// PLACEHOLDER PODATKI — zamenjajte z dejanskimi podatki podjetja.
+// Vsebina podjetja se ureja v: vsebina/podjetje.json
+// Ta datoteka samo prebere JSON in ga preslika na obliko, ki jo uporablja koda.
+import data from "../../vsebina/podjetje.json";
+
 export const site = {
-  name: "B&G Avtomobili",
-  legalName: "B&G Avtomobili d.o.o.",
-  tagline: "Vse za vaš avto. Pod eno streho.",
-  description:
-    "25 let tradicije v prodaji rabljenih vozil v Šentjurju. Odkup, prodaja, zavarovanja, kleparstvo, ličarstvo, vulkanizerstvo in mehanika — vse na enem mestu.",
-  url: "https://bg-avtomobili.si",
-  founded: "2001",
-  yearsTradition: 25,
+  name: data.ime,
+  legalName: data.pravnoIme,
+  tagline: data.slogan,
+  description: data.opis,
+  url: data.spletnaStran,
+  founded: data.letoUstanovitve,
+  yearsTradition: data.letaTradicije,
   address: {
-    street: "Cesta Leona Dobrotinška 12",
-    postal: "3230",
-    city: "Šentjur",
-    country: "Slovenija",
-    countryCode: "SI",
-    region: "Štajerska",
+    street: data.naslov.ulica,
+    postal: data.naslov.postnaStevilka,
+    city: data.naslov.kraj,
+    country: data.naslov.drzava,
+    countryCode: data.naslov.kodaDrzave,
+    region: data.naslov.regija,
   },
-  geo: { lat: 46.2156, lng: 15.3947 },
-  phone: "+386 3 749 12 34",
-  phoneRaw: "+38637491234",
-  email: "info@bg-avtomobili.si",
-  hours: [
-    { day: "Pon–Pet", time: "8:00 – 18:00" },
-    { day: "Sobota", time: "8:00 – 13:00" },
-    { day: "Nedelja", time: "Zaprto" },
-  ],
-  // Zunanja stran s ponudbo vozil
-  inventoryUrl: "https://www.avto.net",
+  geo: data.lokacija,
+  phone: data.telefon,
+  phoneRaw: data.telefonSurov,
+  email: data.epostElek,
+  hours: data.delovniCas.map((h) => ({ day: h.dan, time: h.ura })),
+  inventoryUrl: data.povezavaPonudbeVozil,
   contacts: {
-    sales: {
-      name: "Marko Kranjc",
-      role: "Vodja prodaje",
-      phone: "+386 41 123 456",
-      phoneRaw: "+38641123456",
-      email: "prodaja@bg-avtomobili.si",
-      whatsapp: "38641123456",
-      viber: "+38641123456",
-    },
-    insurance: {
-      name: "Ana Horvat",
-      role: "Zavarovalniški referent",
-      phone: "+386 41 234 567",
-      phoneRaw: "+38641234567",
-      email: "zavarovanja@bg-avtomobili.si",
-      whatsapp: "38641234567",
-      viber: "+38641234567",
-    },
-    service: {
-      name: "Servis & delavnica",
-      role: "Mehanika in karoserija",
-      phone: "+386 3 749 12 35",
-      phoneRaw: "+38637491235",
-      email: "servis@bg-avtomobili.si",
-    },
+    sales: mapContact(data.kontaktneOsebe.prodaja),
+    insurance: mapContact(data.kontaktneOsebe.zavarovanja),
+    service: mapContact(data.kontaktneOsebe.servis),
   },
 };
+
+type RawContact = {
+  ime: string;
+  vloga: string;
+  telefon: string;
+  telefonSurov: string;
+  eposta: string;
+  whatsapp?: string;
+  viber?: string;
+};
+
+function mapContact(c: RawContact) {
+  return {
+    name: c.ime,
+    role: c.vloga,
+    phone: c.telefon,
+    phoneRaw: c.telefonSurov,
+    email: c.eposta,
+    whatsapp: c.whatsapp,
+    viber: c.viber,
+  };
+}
 
 export type Contact = {
   name: string;
