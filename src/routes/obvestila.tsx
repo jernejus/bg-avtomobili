@@ -5,9 +5,7 @@ import { buildMeta } from "@/lib/seo";
 import { notices } from "@/lib/notices";
 import { vsebina } from "@/lib/vsebina";
 
-const v = vsebina.domov; // not used; satisfy lint
-void v;
-const o = (await import("../../vsebina/obvestila.json")).default;
+const o = vsebina.obvestila;
 
 export const Route = createFileRoute("/obvestila")({
   head: () =>
